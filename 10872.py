@@ -1,17 +1,8 @@
+def factorial(num):
+    if num == 0:
+        return 1
+    return num * factorial(num - 1)
+
 n = int(input())
-
-i = 1
-
-def factorial(c): 
-    global i 
-    if i != 0:
-        i *= c  
-        if c == 1:
-            print(i)
-            return
-        factorial(c - 1)
-    else:
-        print(1)
-
-factorial(n)
-
+print(factorial(n))
+# 팩토리얼 n * (n - 1)!
